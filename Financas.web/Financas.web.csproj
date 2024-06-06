@@ -16,9 +16,5 @@
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Financas.api\Financas.api.csproj" />
-    <ProjectReference Include="..\Financas.core\Financas.core.csproj" />
-  </ItemGroup>
 
 </Project>
