@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Transactions;
+using Financas.core.Models;
 using Financas.core.Requests.Transactions;
 using Financas.core.Responses;
 
