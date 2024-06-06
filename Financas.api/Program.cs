@@ -1,6 +1,9 @@
+using System.Reflection.Metadata;
 using Financas.api.Data;
 using Financas.api.Handlers;
 using Financas.core.Handlers;
+using Financas.core.Requests;
+using Financas.core.Requests.Categories;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -18,6 +21,6 @@ var app = builder.Build();
 
 
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", (GetCategoryByIdRequest request, ICategoryHandler handler) => handler.GetCategoryByIdAsync(request));
 
 app.Run();
